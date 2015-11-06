@@ -1,0 +1,17 @@
+﻿[
+  {
+    "Name": "Services (TierPoint)",
+    "Address": "intservices.ambitenergy.com",
+    "Port": "443"
+  },
+  {
+    "Name": "Services (CyrusOne)",
+    "Address": "intservices.ambitenergy.com",
+    "Port": "443"
+  },
+  {
+    "Name": "SQL",
+    "Address": "DEVSQLI02.NPCORE.NOTPROD.LOCAL",
+    "Port": "1433"
+  }
+]
