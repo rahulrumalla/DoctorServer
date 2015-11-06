@@ -20,14 +20,14 @@ namespace DoctorServer
             sb.AppendLine(
                 Verify("PING TEST",
                     servers,
-                    (s) => CanPing(s),
-                    (s, b) => $"{s.Name}:\n Ping to {s.Address} was " + (b ? "OK" : "FAILED")));
+                    CanPing,
+                    (s, b) => $"{s.Name}:\n - Ping to {s.Address} was " + (b ? "OK" : "FAILED")));
 
             sb.AppendLine(
                 Verify("TCP CONNECTION TEST",
                     servers,
-                    (s) => CanConnectOverPort(s),
-                    (s, b) => $"{s.Name}:\n Connection to {s.Address} over port {s.Port} was " + (b ? "OK" : "FAILED")));
+                    CanConnectOverPort,
+                    (s, b) => $"{s.Name}:\n - Connection to {s.Address} over port {s.Port} was " + (b ? "OK" : "FAILED")));
 
             Console.WriteLine(sb.ToString());
 

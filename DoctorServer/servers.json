@@ -1,17 +1,22 @@
 ﻿[
   {
-    "Name": "Services (TierPoint)",
-    "Address": "intservices.ambitenergy.com",
+    "Name": "Services (CyrusOne)",
+    "Address": "10.10.6.101",
     "Port": "443"
   },
   {
-    "Name": "Services (CyrusOne)",
-    "Address": "intservices.ambitenergy.com",
+    "Name": "Services (TierPoint)",
+    "Address": "10.1.5.101",
     "Port": "443"
   },
   {
     "Name": "SQL",
-    "Address": "DEVSQLI02.NPCORE.NOTPROD.LOCAL",
-    "Port": "1433"
+    "Address": "SQPRDBNET01.CORE.PROD.LOCAL",
+    "Port": "2009"
+  },
+  {
+    "Name": "MSMQ",
+    "Address": "INTPDMDIST01.NPCORE.NOTPROD.LOCAL",
+    "Port" :  "1801"
   }
 ]
